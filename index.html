@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="1200">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>harati press</title>
+    <link rel="icon" href="img/bg.jpg" type="image/icon type">
+    <link rel="stylesheet" href="design/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <!-- link for font -->
+</head>
+<body onload="refresh()" onscroll="scrollFunc()">
+    <header>
+        <h1>harati offset press</h1>
+        <nav>
+            <a href="aboutus.html" class="link" onclick="linkclicked(0)">about us</a>
+            <a href="#" class="link" onclick="linkclicked(1)">team</a>
+            <a href="#" class="link" onclick="linkclicked(2)">graphic design</a>
+            <a href="#" class="link" onclick="linkclicked(3)">digital printing</a>
+            <a href="#" class="link" onclick="linkclicked(4)">offset printing</a>
+            <a href="#" class="link" onclick="linkclicked(5)">calculate spine</a>
+            <a href="#" class="link" onclick="linkclicked(6)">contact</a>
+        </nav>
+    </header>
+    <!-- menus  -->
+    <div class="img" style="background-image: url('img/bg.jpg');">
+
+    </div>
+    <!-- this is for poster image  -->
+    <div class="img-box">
+        <h1 class="img-title">asthetic designs, digital printing services</h1>
+        <button class="img-btn"><a href="#">discover more! ></a></button>
+    </div>
+    <!-- background image and poster  -->
+    <article class="content first-article" style="background-image: url('img/bg2.png');">
+        <h2 class=content-title>We are committed to providing</h2>
+        <div class="inner-content">
+            <div class="content-container">
+                <div class="signs"><i class="fas fa-paint-brush"></i></div>
+                <div class="content-text">
+                    <h2>asthetic design</h2>
+                    <p>we belive in beautifulness that'swhy we do chasse the aesthetic design.
+                        A form, color, position and symbol sketches the its perfection.
+                    </p>
+                </div>
+            </div>
+            <!-- single content  -->
+            <div class="content-container">
+                <div class="signs"><i class="far fa-thumbs-up"></i></div>
+                <div class="content-text">
+                    <h2>quality work </h2>
+                    <p>we provide quality work. We do belive that quality is not act. 
+                        It is a habit and people love to do habitual thing. 
+                    </p>
+                </div>
+            </div>
+            <!-- single content  -->
+            <div class="content-container">
+                <div class="signs"><i class="fas fa-infinity"></i></div>
+                <div class="content-text">
+                    <h2>flexible time</h2>
+                    <p>Flexibility of time is the aspect we offer to our clients. 
+                        They can bend us as much as they can according to their needs and
+                        requirements.
+                    </p>
+                </div>
+            </div>
+            <!-- single content  -->
+            <div class="content-container">
+                <div class="signs"><i class="far fa-calendar-check"></i></div>
+                <div class="content-text">
+                    <h2>service on deadline</h2>
+                    <p>Getting work done on deadline is our main priority. A goal is a
+                        dream with a deadline. so our ultimate goal is to job done on time.
+                    </p>
+                </div>
+            </div>
+            <!-- single content  -->
+            <div class="content-container">
+                <div class="signs"><i class="fas fa-users"></i></div>
+                <div class="content-text">
+                    <h2>good user experience</h2>
+                    <p>We are absolutely passionate about simple yet sophisticated designs and printing
+                        services which imporove the overall user experience.
+                    </p>
+                </div>
+            </div>
+            <!-- single content  -->
+            <div class="content-container">
+                <div class="signs"><i class="far fa-comment-dots"></i></div>
+                <div class="content-text">
+                    <h2>hassle-free supports</h2>
+                    <p>Don't worry at anything! We're here to support you with 10 year's experiences
+                    </p>
+                </div>
+            </div>
+            <!-- single content  -->
+        </div>
+    </article>
+    <!-- contents of press all details and functions -->
+    <article class='second-article' style="background-image: url('img/2.jpg')">
+        <div class="outer-content">
+            <h1>our awesome services</h1>
+            <div class="inner-box">
+                <div class="box">
+                    <img src="img/gd.png" alt="">
+                    <h1>graphic design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, omnis! Similique, necessitatibus.</p>
+                </div>
+                <div class="box">
+                    <img src="img/op.png" alt="">
+                    <h1>digital printing</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, omnis! Similique, necessitatibus.</p>
+                </div>
+                <div class="box">
+                    <img src="img/pr.png" alt="">
+                    <h1>offset printing</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, omnis! Similique, necessitatibus.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class='third-article' style="background-image:url('img/bg3.jpg')">
+        <h1>glimpses' episode</h1>
+        <div class="outer-content grid3">
+            <iframe src="https://www.youtube.com/embed/oTqY6bLf89E" frameborder="0"></iframe>
+            <iframe src="https://www.youtube.com/embed/6JggfUHd_x4" frameborder="0"></iframe>
+            <iframe src="https://www.youtube.com/embed/6JggfUHd_x4" frameborder="0"></iframe>
+            <iframe src="https://www.youtube.com/embed/6JggfUHd_x4" frameborder="0"></iframe>
+        </div>
+    </article>
+    <script>
+        function linkclicked(n){
+            let links = document.querySelectorAll('.link');
+            for(let i =0; i< links.length;i++){
+                links[i].style.border = 'none';
+                links[i].style.color = "black";
+            }
+            document.getElementsByClassName('link')[n].style.borderTop="4px solid rgb(15, 117, 188)";
+            document.getElementsByClassName('link')[n].style.color=" rgb(15, 117, 188)";
+
+        }
+        function refresh(){
+            document.querySelector('.img-title').style.transform= "translateX(0)";
+
+        }
+        // window.onscroll = function () { scrollFunc() }
+        function scrollFunc(){
+            var body = document.documentElement.scrollTop;
+            var firstElementPosition = document.querySelector('.second-article ').offsetTop;
+            var secondElementPosition = document.querySelector('.first-article ').offsetTop;
+            console.log(body + " " + firstElementPosition);
+            if(body>=firstElementPosition|| body>= secondElementPosition){
+                console.log(secondElementPosition);
+                document.querySelector('.inner-box').style.transform = "translateY(0px)";
+                var boxes = document.querySelectorAll('.content-container');
+                for(let i =0; i < boxes.length;i++){
+                    boxes[i].style.transform = "scale(1)";
+                }
+            }
+            else{
+                 document.querySelector('.inner-box').style.transform = "translateY(100px)"; 
+                 var boxes = document.querySelectorAll('.content-container');
+                 for (let i = 0; i < boxes.length; i++) {
+                    boxes[i].style.transform="scale(0)";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
