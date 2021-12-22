@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            position: relative;
+            margin:40vh auto;
+            height:10vh;
+            width: max-content;
+        }
+        .box::after{
+            content: "";
+            position: absolute;
+            top:-20px;
+            left: -50px;
+            height: 90px;
+            width: 90px;
+            clip-path: circle(50% at 50% 50%);
+            background-color: #FF0000;
+            z-index: -1;
+            animation: up 2s  ;
+        }
+        @keyframes up {
+            from{
+                top: 40px;
+            }
+            to{
+                top: -20px;
+            }
+            
+        }
+        .box>h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            text-transform: capitalize;
+            transform: translateX(-15px);
+            animation: slide 2s ;
+        }
+        .box>h1>span:nth-child(1){
+            color: white;
+            animation: f 2s ;
+        }
+        .box>h1>span:nth-child(2){
+            color: #FF0000;
+            animation: s 2s ;
+        }
+        @keyframes s {
+            from{
+                color: white;
+            }
+            to{
+                color: #FF0000;
+            }
+        }
+        @keyframes  f{
+            from{
+                color: #FF0000;
+            }
+            to{
+                color: white;
+            }
+        }
+        @keyframes slide{
+            from{
+                transform: translateX(-100px);
+            }
+            to{
+                transform:translateX(-15px);
+                color: #FF0000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1><span>pro</span> <span>active</span></h1>
+    </div>
+</body>
+</html>
