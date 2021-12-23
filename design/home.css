@@ -4,13 +4,15 @@ body {
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
+
 /* for all the body  */
 a {
   text-decoration: none;
 }
 /* for all the anchor tags */
 header {
-  min-height: 100px;
+  position: relative;
+  height: max-content;
   background-color: #fff;
 }
 /* heading tag styles */
@@ -28,6 +30,10 @@ header > nav {
   width: max-content;
   margin: 0px auto;
   padding: 20px;
+}
+/* hiding secondary nav */
+.nav-sec {
+  display: none;
 }
 /* navigation bar inside the header tag style */
 header > nav > a {
@@ -66,7 +72,7 @@ header > nav > a:hover {
 /* hover effect for the button */
 .img {
   position: relative;
-  height: 500px;
+  height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
   background-clip: content-box;
@@ -252,4 +258,44 @@ header > nav > a:hover {
 .grid3 > iframe {
   height: 100%;
   width: 100%;
+}
+/* responsive */
+@media (max-width: 1100px) {
+  body {
+    margin: 0px;
+    min-width: 100%;
+  }
+  header > h1 {
+    font-size: 12px;
+  }
+  .nav-pri {
+    display: none;
+  }
+  .nav-sec {
+    position: fixed;
+    top: 0px;
+    height: 100vh;
+    display: grid;
+    z-index: 111;
+    background-color: rgb(255, 255, 255, 0.5);
+  }
+  .nav-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    height: 12px;
+    width: 22px;
+    z-index: 222;
+  }
+  .nav-button > div {
+    height: 3px;
+    width: 12px;
+    background-color: grey;
+  }
+  .nav-button > div:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 4px);
+  }
+  .nav-button > div:nth-child(2) {
+    transform: rotate(-45deg) translate(6px, 6px);
+  }
 }
